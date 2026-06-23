@@ -19,7 +19,7 @@ Hosted a static website on Amazon S3 using AWS Static Website Hosting.
 - Bucket Policies
 
 ## Live Website
-[Website Link](PASTE_YOUR_S3_WEBSITE_URL_HERE)
+http://dinishitha-static-website-26.s3-website-ap-southeast-2.amazonaws.com/
 
 ## Screenshots
 Add screenshots of:
