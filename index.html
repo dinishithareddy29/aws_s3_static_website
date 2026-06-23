@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Paradise</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg,#ffe6f0,#e6f7ff);
+            color:#333;
+        }
+
+        header{
+            text-align:center;
+            padding:50px 20px;
+            background:#ffb6c1;
+            color:white;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:10px;
+        }
+
+        header p{
+            font-size:1.2rem;
+        }
+
+        .container{
+            width:90%;
+            max-width:1200px;
+            margin:auto;
+            padding:40px 0;
+        }
+
+        .intro{
+            text-align:center;
+            margin-bottom:40px;
+        }
+
+        .pets{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+            gap:25px;
+        }
+
+        .card{
+            background:white;
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 12px rgba(0,0,0,0.15);
+            transition:transform 0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card img{
+            width:100%;
+            height:220px;
+            object-fit:cover;
+        }
+
+        .card-content{
+            padding:20px;
+        }
+
+        .card h3{
+            margin-bottom:10px;
+            color:#ff69b4;
+        }
+
+        .facts{
+            background:white;
+            margin-top:50px;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .facts h2{
+            color:#4a90e2;
+            margin-bottom:15px;
+        }
+
+        .facts ul{
+            padding-left:20px;
+            line-height:2;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#ffb6c1;
+            color:white;
+            margin-top:40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🐾 Pet Paradise 🐾</h1>
+        <p>Celebrating our adorable furry friends!</p>
+    </header>
+
+    <div class="container">
+
+        <div class="intro">
+            <h2>Why We Love Pets ❤️</h2>
+            <p>
+                Pets bring happiness, companionship, and unconditional love.
+                Whether it's a playful puppy, a curious cat, or a cheerful rabbit,
+                every pet has a special way of making our lives brighter.
+            </p>
+        </div>
+
+        <div class="pets">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?w=800" alt="Dog">
+                <div class="card-content">
+                    <h3>🐶 Dogs</h3>
+                    <p>
+                        Dogs are loyal, friendly, and full of energy.
+                        They are known as humanity's best friends.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?w=800" alt="Cat">
+                <div class="card-content">
+                    <h3>🐱 Cats</h3>
+                    <p>
+                        Cats are independent yet affectionate companions
+                        that love to explore and play.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1585110396000-c9ffd4e4b308?w=800" alt="Rabbit">
+                <div class="card-content">
+                    <h3>🐰 Rabbits</h3>
+                    <p>
+                        Rabbits are gentle, adorable pets that enjoy
+                        hopping around and munching on vegetables.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="facts">
+            <h2>Fun Pet Facts 🎉</h2>
+            <ul>
+                <li>🐶 Dogs can learn over 100 words and gestures.</li>
+                <li>🐱 Cats spend nearly 70% of their lives sleeping.</li>
+                <li>🐰 Rabbits can jump up to 3 feet high.</li>
+                <li>❤️ Pets help reduce stress and improve happiness.</li>
+                <li>🏡 Millions of families around the world have pets.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        Made with ❤️ for Pet Lovers | AWS S3 Static Website Demo
+    </footer>
+
+</body>
+</html>
